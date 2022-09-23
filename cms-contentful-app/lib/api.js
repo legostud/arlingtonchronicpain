@@ -27,6 +27,24 @@ content {
   }
 }
 `
+const DETAIL_PAGE_GRAPHQL_FIELDS = `
+pageTitle
+pageDescription
+bodyCopy {
+  json
+  links {
+    assets {
+      block {
+        sys {
+          id
+        }
+        url
+        description
+      }
+    }
+  }
+}
+`
 
 async function fetchGraphQL(query, preview = false) {
   return fetch(

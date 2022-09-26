@@ -29,6 +29,7 @@ content {
 `
 const DETAIL_PAGE_GRAPHQL_FIELDS = `
 pageTitle
+slug
 pageDescription
 bodyCopy {
   json
